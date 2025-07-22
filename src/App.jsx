@@ -79,7 +79,7 @@ export default function App() {
         {/* Hero Section */}
         <section className="max-w-4xl mx-auto px-4 py-16 text-center">
           <motion.img
-            src="/photo_shankul.jpg"
+            src={`${import.meta.env.BASE_URL}photo_shankul.jpg`}
             alt="Shankul Vatsa"
             className="w-36 h-36 mx-auto rounded-full mb-6 border-4 border-blue-500 shadow-xl transition-all duration-300 ring ring-offset-2 ring-blue-300"
             initial={{ scale: 0.8, opacity: 0 }}
@@ -108,7 +108,7 @@ export default function App() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6 }}
           >
-            <a href="/resume.pdf" download="Shankul_Vatsa_Resume.pdf" className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
+            <a href={`${import.meta.env.BASE_URL}resume.pdf`} download="Shankul_Vatsa_Resume.pdf" className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">
               Download CV
             </a>
             <ScrollLink to="contact" smooth={true} duration={500} className="border border-blue-600 text-blue-600 py-2 px-4 rounded hover:bg-blue-600 hover:text-white cursor-pointer">
