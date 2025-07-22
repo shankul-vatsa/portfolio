@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply font-sans leading-relaxed bg-white text-gray-900 dark:bg-gray-900 dark:text-white;
+  font-family: 'Inter', sans-serif;
 }
