@@ -63,7 +63,6 @@ export default function App() {
             <ScrollLink to="projects" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600">Projects</ScrollLink>
             <ScrollLink to="contact" smooth={true} duration={500} className="cursor-pointer hover:text-blue-600">Contact</ScrollLink>
           </div>
-          <h1 className="text-red-500">Hello Tailwind</h1>
           <div className="flex items-center gap-4">
             <a href="https://github.com/shankulvatsa" target="_blank" rel="noreferrer">
               <Github className="w-5 h-5" />
@@ -82,7 +81,7 @@ export default function App() {
           <motion.img
             src="/photo_shankul.jpg"
             alt="Shankul Vatsa"
-            className="w-36 h-36 mx-auto rounded-full mb-6 border-4 border-blue-500 shadow-xl hover:grayscale transition-all duration-300 ring ring-offset-2 ring-blue-300"
+            className="w-36 h-36 mx-auto rounded-full mb-6 border-4 border-blue-500 shadow-xl transition-all duration-300 ring ring-offset-2 ring-blue-300"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6 }}
