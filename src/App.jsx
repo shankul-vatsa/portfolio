@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Sun, Moon, Github, Linkedin, ExternalLink } from "lucide-react";
 import { Link as ScrollLink } from "react-scroll";
 import { motion } from "framer-motion";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 import "./index.css";
 
 const Card = ({ children, className }) => (
@@ -288,6 +289,7 @@ export default function App() {
           &copy; {new Date().getFullYear()} Shankul Vatsa. All rights reserved.
         </footer>
       </main>
+      <ScrollToTopButton />
     </div>
   );
 }
